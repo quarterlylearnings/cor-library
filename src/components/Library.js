@@ -44,7 +44,7 @@ const Library = () => {
     return (
         <section>
             {
-              shelves.map(shelf => <Shelf genre={shelf.genre} />)  
+              shelves.map((shelf, index) => <Shelf key={index} genre={shelf.genre} books={shelf.books} />)  
             }
         </section>
     )

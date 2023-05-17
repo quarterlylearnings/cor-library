@@ -1,8 +1,8 @@
-const Book = () => {
+const Book = (props) => {
     return (
         <article>
-            <h2>Native Son</h2>
-            <p>Richard Wright</p>
+            <h4>{ props.title }</h4>
+            <p>{ props.author }</p>
         </article>
     )
 }
